@@ -14,9 +14,9 @@ PYTHON STREAMS:
 user_name = "John Doe" # variable
 
 #  input => input()
-user_name = input("What is your name? ")
+user_name = input("What is your name? ") # standard input
 # ouput => print()
-print(user_name)
+print(f"Nice to meet you, {user_name}!") # standard output
 
 # errors => exceptions
-age # NameError: name 'age' is not defined => returns an erro since it has not been assigned a vlaue from hte word go
+# age # NameError: name 'age' is not defined => returns an erro since it has not been assigned a vlaue from hte word go
