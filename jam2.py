@@ -163,6 +163,31 @@ final_colors = unique_colors.union(unique_color_codes) # joins two sets
 final_colors = unique_colors.intersection(unique_color_codes) # what exists in both sets
 output = final_colors
 
+# dictionaries: dict=> key: value pairs
+
+person = { 
+    "name": "John Doe", 
+    "age": 100, 
+    "yob": 1926, 
+    "isVeteran": False
+}
+person = { 
+    "name": "John Doe", 
+    "age": 100, 
+    "yob": 1926, 
+    "isVeteran": False,
+    "hobby": {
+        "name": "runnning", 
+        "record": "IronMan",
+        "year": 2000
+    }
+}
+# dictionary methods: ref:https://www.w3schools.com/python/python_dictionaries_methods.asp
+output = person['yob']
+output = person.keys()
+output = person.values()
+output = person["hobby"]
+output = person
 print("==========================================================")
 print(output)
 print("==========================================================")
