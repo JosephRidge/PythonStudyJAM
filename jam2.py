@@ -4,15 +4,15 @@ DATA TYPES:
     - Text(strings) :
         - They are enclosed inside a "" or ''
         - is an array of characters (immutable in nature)
-        - class <str>
+        - class <str>: <class 'str'>
 
     - Numbers(Integers, Floating, Complex):
         - integers:
             - whole numbers that span from -infitnity to +infinity:
-            - class <int>
+            - class <int>: <class 'int'>
         - floatings:
             - decimal numbers
-            - class <float>
+            - class <float>: <class 'float'>
         complex:
             - eg squareroot of 2
             - class <complex>
@@ -21,7 +21,7 @@ DATA TYPES:
         - Array List
             - collection of items(can be repeated)
             - mutable(can be updated)
-            - class <list>
+            - class <list>: <class 'list'>
             - enclosed inside a [] 
 
         - Tuples:
@@ -68,7 +68,72 @@ output = name_of_place[3:] # start and stop
 
 output = name_of_place[0:-1:2] # start, stop, step
 
+# String methods : ref:https://www.w3schools.com/PYTHON/python_ref_string.asp
+second_name = "johnowick"
+output = second_name.capitalize() # it akes the first letter  to be capital letter
+output = second_name.upper() # converting to capital letter
+output = second_name.center(2000) #	Returns a centered string  
+output = second_name.lower()
+output = second_name.count('o') # it returns the count of the occurences of the items 
+output = second_name.center(20) #	Returns a centered string  
+output = type(second_name) # we invoke th etype command when we want to check the data type 
+output = len(second_name) # returns 9
+output = len(second_name.center(20)) # returns 20 - due to the added spacing
 
+
+# Numbers : - integers (whole numbers)
+age = 10 
+output = type(age) # returns the data type => <class 'int'>
+year_of_birth = 2005
+current_year = 2026 
+
+output = current_year - year_of_birth
+
+# floating numbers - decimal numbers 
+height = 20.5
+weight = 40.5 
+
+output = type(height)
+height = str(height) # converted ot string
+height = float(height) # converting to a floating number
+height = int(height) # converting to an integer number
+output = type(height)  
+output = height
+
+# complex numbers =>  squareroot of 2
+sqrt_of_two = 2j # j depicts complex
+output = sqrt_of_two
+output = type(sqrt_of_two) # <class 'complex'>
+age = 10 
+output = complex(age)
+
+
+# Lists(collection of elmements => strings are collections of elments): 
+# list 
+fruits = ["mango", "banana","apple","pineapple", "watermelon", 100, 20j, 20.54] # arraylist with multiple data types
+# fruits.sort() #TypeError: '<' not supported between instances of 'int' and 'str'
+fruits = ["mango", "banana","apple","pineapple", "watermelon"] # arraylist  with single data type
+
+# loop for..in loop (running iterations)
+for fruit in fruits:
+    print(fruit) # python groups code using indentation
+
+#  array methods" pop, append, ref: https://www.w3schools.com/python/python_ref_list.asp
+fruits.append("kiwi") # method to add an element at the last position in the list
+fruits.append("dragon fruit") # method to add an element at the last position in the list
+fruits.pop() # delete or drop last element from lists
+fruits.insert(1, "orange") # takes two parameters (position and value), places the items at that specific position
+fruits.insert(1, "tangerine") # takes two parameters (position and value), places the items at that specific position
+fruits.insert(-1, "tangerine") # takes two parameters (position and value), places the items at that specific position
+fruits.sort() # arranges in ascending orders
+
+output = fruits
+output = type(fruits)
+output = fruits[0] # we use indexes to access elements in an array 
+output = fruits[-1] # using indexes to access elements
+output = fruits[0:4] # slicing
+output = fruits [4:] # slicing
+ouput = fruits[0:len(fruits)-1:2] # slicing with a step
 
 print("==========================================================")
 print(output)
