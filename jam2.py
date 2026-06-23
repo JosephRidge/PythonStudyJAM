@@ -26,7 +26,7 @@ DATA TYPES:
 
         - Tuples:
             - immutable in nature (they cannot be updated)
-            - class <tuple>
+            - class <tuple>:<class 'tuple'>
             - enclosed in ()
             - items can be repeated
         
@@ -115,8 +115,8 @@ fruits = ["mango", "banana","apple","pineapple", "watermelon", 100, 20j, 20.54] 
 fruits = ["mango", "banana","apple","pineapple", "watermelon"] # arraylist  with single data type
 
 # loop for..in loop (running iterations)
-for fruit in fruits:
-    print(fruit) # python groups code using indentation
+# for fruit in fruits:
+#     print(fruit) # python groups code using indentation
 
 #  array methods" pop, append, ref: https://www.w3schools.com/python/python_ref_list.asp
 fruits.append("kiwi") # method to add an element at the last position in the list
@@ -134,6 +134,34 @@ output = fruits[-1] # using indexes to access elements
 output = fruits[0:4] # slicing
 output = fruits [4:] # slicing
 ouput = fruits[0:len(fruits)-1:2] # slicing with a step
+
+
+# Tuples : immutable in nature and enclosed withini  ()
+colors = ("RED", "GREEN", "BLUE", "PURPLE", "YELLOW", "WHITE", "RED","BLUE", "RED") 
+output = colors
+output = colors[0] # accessing it using index
+output = colors[0:3] # accessing it using index
+output = colors[0:5:2] # slicing with a step
+
+output = type(colors)
+output = colors
+
+# tuple mehtods: ref:https://www.w3schools.com/python/python_ref_tuple.asp
+output = colors.count("RED") # the number of occurences of the worrd RED
+output = colors.index("PURPLE") # return sthe positoin of the elment
+
+# sets: a list composed of unique items , enclosed inside {}
+unique_colors = set(colors) # converting a tuple into a set 
+output = list(unique_colors) # converting a set into a list 
+output = tuple(unique_colors) # converting a list into a tuple 
+output = type(unique_colors)
+
+unique_color_codes = {"rouge","brune","noir","blanche","RED"}
+
+#  set methods: ref: https://www.w3schools.com/python/python_ref_set.asp
+final_colors = unique_colors.union(unique_color_codes) # joins two sets
+final_colors = unique_colors.intersection(unique_color_codes) # what exists in both sets
+output = final_colors
 
 print("==========================================================")
 print(output)
